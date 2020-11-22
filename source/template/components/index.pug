@@ -1,0 +1,100 @@
+header.header
+    .wrapper
+        .logo
+            a(href="./")
+                img(src="./images/icon/logo.svg", alt="logo")
+                span Курортный поселок для жизни
+        .header__block
+            .header__phone
+                a(href="#") Заказать звонок
+                a(href="tel:+ 79990000000")
+                    img(src="./images/icon/phone.svg", alt="phone")
+                    | + 7 999 000-00-00
+            nav.menu
+                ul
+                    li
+                        a(href="#") О проекте 
+                    li
+                        a(href="#") Выбрать участок
+                    li
+                        a(href="#") Контакты
+                <div class="menu-left" id="menu-left">
+                    //- <?php
+                    //-     $this->widget('\menu\widgets\menu\MenuWidget', array(
+                    //-     'rootLimit' => D::cms('menu_limit'),
+                    //-     'cssClass' => 'menu1',
+                    //-     'id' => 'menu'
+                    //-     ));
+                    //- ?>
+                </div>
+
+                <a href="#menu-left" class="menu-toggle-link">
+                    <div class="menu-toggle">
+                        <span class="menu-toggle__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 384 384"><g xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fff" data-original="#000000" d="M0 277.333h384V320H0zM0 170.667h384v42.667H0zM0 64h384v42.667H0z"/></g></svg></span>
+                    </div>
+                </a>
+                //- <?php
+                //-     $this->widget('\menu\widgets\menu\MenuWidget', array(
+                //-     'rootLimit' => D::cms('menu_limit'),
+                //-     'cssClass' => ''
+                //-     ));
+                //- ?>
+section.slider
+    h2 Камерный дачный поселок с морским видом и лучшим пляжем на Балтике
+    .licens
+        img(src="./images/decor/2019.jpg", alt="2019")
+        img(src="./images/decor/2020.jpg", alt="2020")
+        p Высокий стандарт качества пляжа FEE
+section.gallery
+    h2 Фотогалерея
+    .gallery__wrap
+        .gallery-slider
+            .gallery__slide
+                img(src="./images/decor/slide-1.jpg", alt="slide")
+            .gallery__slide
+                img(src="./images/decor/slide-2.jpg", alt="slide")
+            .gallery__slide
+                img(src="./images/decor/slide-3.jpg", alt="slide")
+            .gallery__slide
+                img(src="./images/decor/slide-4.jpg", alt="slide")
+            .gallery__slide
+                img(src="./images/decor/slide-1.jpg", alt="slide")
+section.form
+    h2 Оставить заявку
+    .form__wrap
+        .form__col
+            label Имя
+            input(type="text", name="name")
+        .form__col
+            label Телефон
+            input(type="tel", name="phone")
+        .form__col
+            label Ваш комментарий
+            textarea(name="text", cols="30", rows="10")
+        .form__btn
+            input(type="checkbox", name="check")#check
+            label(for="check") Я принимаю условия пользовательского соглашения
+            input(type="submit", value="Отправить")
+section.map
+    <div id="map" style="width: 100%; height: 701px"></div>
+    .wrapper
+        .map__info
+            h3 Расположение
+            p Поселок Синявино находится на берегу Балтийского моря, в Янтарном городском округе Калининградской области в часе езды от Калининграда.
+            p В шаговой доступности — пляж и озеро Синявинское.
+footer.footer
+    .wrapper
+        .footer__copyright
+            p © 2020 
+                a(href="#") Политика конфиденциальности
+            p
+                a(href="mailto:example@gmail.com") example@gmail.com 
+                | — электронная почта для обращений с вопросом о своих персональных данных, в том числе об их удалении.
+        .footer__links
+            .footer__text
+                a(href="#") Создание сайтов
+                a(href="#") Продвижение сайтов
+            a(href="#")
+                img(src="./images/icon/kontur.svg", alt="kontur")
